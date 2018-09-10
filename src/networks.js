@@ -48,5 +48,16 @@ module.exports = {
     scriptHash: 0x10,
     wif: 0xcc,
     dustThreshold: 5460 // https://github.com/dashpay/dash/blob/v0.12.0.x/src/primitives/transaction.h#L144-L155
-  }
+  },
+      qtum: {
+        messagePrefix: '\x18Qtum Signed Message:\n',
+        bech32: 'bc',
+        bip32: {
+            public: 0x0488b21e,
+            private: 0x0488ade4
+        },
+        pubKeyHash: 0x3a,
+        scriptHash: 0x32,
+        wif: 0x80
+    }
 }
